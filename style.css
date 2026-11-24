@@ -1,167 +1,180 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ali Kizilboga – Développeur web, BTS SIO SLAM</title>
-  <meta name="description" content="Portfolio d'Ali Kizilboga, étudiant en BTS SIO option SLAM : projets web et logiciels, compétences, parcours et contact." />
-  <meta name="theme-color" content="#1b2bd9" />
-  <meta property="og:title" content="Ali Kizilboga – Développeur web, BTS SIO SLAM" />
-  <meta property="og:description" content="Projets web et logiciels, compétences et parcours d'un étudiant en BTS SIO option SLAM." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230f5c45'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='white'%3EAK%3C/text%3E%3C/svg%3E" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <a class="skip" href="#contenu">Aller au contenu</a>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <header class="site-header">
-    <div class="wrap bar">
-      <a class="brand" href="#top">Ali Kizilboga</a>
-      <nav aria-label="Navigation principale">
-        <a href="#projets">Projets</a>
-        <a href="#competences">Compétences</a>
-        <a href="#parcours">Parcours</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+:root {
+  --navy: #00214f;
+  --navy-deep: #001a40;
+  --cream: #f8e9d8;
+  --cream-soft: rgb(248 233 216 / .76);
+  --rule: rgb(248 233 216 / .24);
+  --font: 'Lexend', 'Segoe UI', system-ui, sans-serif;
+  color-scheme: dark;
+}
 
-  <main id="contenu">
-    <section class="hero wrap" id="top">
-      <div class="hero-text">
-        <h1>Ali Kizilboga</h1>
-        <p class="role">Développeur web en formation, BTS SIO option SLAM</p>
-        <p class="lead">
-          Je conçois des applications web et logicielles. Pendant mon stage, j'ai réalisé le site vitrine d'une entreprise artisanale. En formation, je travaille en C#, Python, PHP et SQL.
-        </p>
-        <p class="actions">
-          <a class="btn primary" href="#projets">Voir mes projets</a>
-          <a class="btn" href="#contact">Me contacter</a>
-        </p>
-      </div>
-      <dl class="facts">
-        <div><dt>Formation</dt><dd>BTS SIO option SLAM, Lycée Simone Weil</dd></div>
-        <div><dt>Lieu</dt><dd>Loire, Auvergne-Rhône-Alpes</dd></div>
-        <div><dt>Langues</dt><dd>Turc et français (bilingue), anglais B2, espagnol B1</dd></div>
-        <div><dt>Code</dt><dd><a href="https://github.com/kizilbogaalipro-dotcom" target="_blank" rel="noopener noreferrer">github.com/kizilbogaalipro-dotcom</a></dd></div>
-      </dl>
-    </section>
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
 
-    <section class="wrap" id="projets" aria-labelledby="t-projets">
-      <h2 id="t-projets">Projets</h2>
-      <ul class="projects">
-        <li class="project">
-          <div class="p-main">
-            <h3>Site vitrine Emrullah Kizilkilic BTP</h3>
-            <p>Site vitrine d'une entreprise artisanale de maçonnerie à Saint-Étienne, réalisé pendant mon stage.</p>
-          </div>
-          <p class="p-meta"><strong>Stage, projet client</strong><span>Site vitrine statique</span></p>
-          <a class="p-link" href="https://github.com/kizilbogaalipro-dotcom/site_Emrullah_Kizilkilic" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
-        </li>
-        <li class="project">
-          <div class="p-main">
-            <h3>Réponse aux avis clients, Le Fournil des Monts</h3>
-            <p>Application qui aide une boulangerie à répondre à ses avis clients, avec un modèle de langage exécuté en local.</p>
-          </div>
-          <p class="p-meta"><strong>Projet de cours</strong><span>Ollama, RAG, agent</span></p>
-        </li>
-        <li class="project">
-          <div class="p-main">
-            <h3>PlaylistApp</h3>
-            <p>Application de gestion de playlists : tri par durée, recherche par genre et enregistrement des données avec Entity Framework Core.</p>
-          </div>
-          <p class="p-meta"><strong>Projet de cours</strong><span>C#, EF Core, SQLite</span></p>
-          <a class="p-link" href="https://github.com/kizilbogaalipro-dotcom/Playlist-C-" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
-        </li>
-        <li class="project">
-          <div class="p-main">
-            <h3>Laboratoire de cybersécurité</h3>
-            <p>Application web générée avec une IA dans GitHub Codespaces, puis auditée avec OWASP ZAP pour repérer et corriger les failles.</p>
-          </div>
-          <p class="p-meta"><strong>Projet de cours</strong><span>OWASP ZAP, Codespaces, Shell</span></p>
-          <a class="p-link" href="https://github.com/kizilbogaalipro-dotcom/PROJET-CYBER" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
-        </li>
-        <li class="project">
-          <div class="p-main">
-            <h3>Site Boulangerie</h3>
-            <p>Site présentant les produits, les horaires et les coordonnées d'une boulangerie, conçu pour m'entraîner avant mon stage.</p>
-          </div>
-          <p class="p-meta"><strong>Entraînement</strong><span>HTML</span></p>
-          <a class="p-link" href="https://github.com/kizilbogaalipro-dotcom/Site_boulangerie" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
-        </li>
-        <li class="project">
-          <div class="p-main">
-            <h3>Conception numérique</h3>
-            <p>Projet du semestre appliquant les notions de modélisation vues en cours.</p>
-          </div>
-          <p class="p-meta"><strong>Projet de cours</strong><span>Modélisation</span></p>
-          <a class="p-link" href="https://github.com/kizilbogaalipro-dotcom/CONCEPTION-NUMERIQUE-" target="_blank" rel="noopener noreferrer">Code sur GitHub</a>
-        </li>
-      </ul>
-    </section>
+body {
+  background: var(--navy);
+  color: var(--cream);
+  font-family: var(--font);
+  font-weight: 300;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
 
-    <section class="wrap" id="competences" aria-labelledby="t-comp">
-      <h2 id="t-comp">Compétences</h2>
-      <div class="skills">
-        <div>
-          <h3>Développement</h3>
-          <p>C#, Python, PHP, JavaScript, HTML et CSS</p>
-        </div>
-        <div>
-          <h3>Données</h3>
-          <p>SQL, SQLite, modélisation MCD, MLD et MPD</p>
-        </div>
-        <div>
-          <h3>Systèmes et outils</h3>
-          <p>Linux, Git et GitHub, Codespaces, Ollama, OWASP ZAP</p>
-        </div>
-        <div>
-          <h3>Vu en travaux pratiques</h3>
-          <p>Flask, API REST, Docker, Kubernetes, ChromaDB, HTTPS et TLS</p>
-        </div>
-      </div>
-    </section>
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--cream); outline-offset: 3px; border-radius: 4px; }
 
-    <section class="wrap" id="parcours" aria-labelledby="t-parcours">
-      <h2 id="t-parcours">Parcours</h2>
-      <ol class="timeline">
-        <li>
-          <p class="when">En cours</p>
-          <div>
-            <h3>BTS SIO option SLAM</h3>
-            <p class="where">Lycée Simone Weil, Saint-Priest-en-Jarez</p>
-            <p>Solutions logicielles et applications métiers : développement, bases de données, réseaux et sécurité, conteneurs.</p>
-          </div>
-        </li>
-        <li>
-          <p class="when">2026</p>
-          <div>
-            <h3>Stage de développement web</h3>
-            <p class="where">Emrullah Kizilkilic BTP, Saint-Étienne</p>
-            <p>Création du site vitrine de l'entreprise.</p>
-          </div>
-        </li>
-      </ol>
-    </section>
+.wrap { width: min(100% - 3rem, 62rem); margin-inline: auto; }
 
-    <section class="wrap contact" id="contact" aria-labelledby="t-contact">
-      <h2 id="t-contact">Contact</h2>
-      <p>Un stage, un projet ou une question ? Écrivez-moi, je réponds rapidement.</p>
-      <p class="actions">
-        <a class="btn primary" href="mailto:kizilboga.ali.pro@gmail.com">kizilboga.ali.pro@gmail.com</a>
-        <a class="btn" href="https://github.com/kizilbogaalipro-dotcom" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </p>
-    </section>
-  </main>
+.skip {
+  position: absolute; left: 1rem; top: -4rem;
+  background: var(--cream); color: var(--navy);
+  padding: .6rem 1rem; border-radius: 6px; z-index: 20; font-weight: 600;
+}
+.skip:focus { top: 1rem; }
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>© 2026 Ali Kizilboga. BTS SIO option SLAM, Lycée Simone Weil.</p>
-    </div>
-  </footer>
-</body>
-</html>
+/* En-tête */
+.site-header {
+  position: sticky; top: 0; z-index: 10;
+  background: var(--navy);
+  border-bottom: 1px solid var(--rule);
+}
+.bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 3.75rem; }
+.brand { font-weight: 700; font-size: 1.05rem; text-decoration: none; letter-spacing: -0.01em; }
+.site-header nav { display: flex; gap: 1.75rem; flex-wrap: wrap; justify-content: flex-end; }
+.site-header nav a {
+  text-decoration: none; font-size: .92rem; font-weight: 400; padding: .25rem 0;
+  border-bottom: 1px solid transparent; transition: border-color .15s;
+}
+.site-header nav a:hover { border-bottom-color: var(--cream); }
+
+/* Titres : un point final, comme signature */
+h1, h2, h3 { font-weight: 700; line-height: 1.02; letter-spacing: -0.035em; }
+h1::after, h2::after { content: '.'; }
+h2 { font-size: clamp(2rem, 5vw, 3.2rem); margin-bottom: 2.5rem; }
+h3 { font-size: 1.1rem; letter-spacing: -0.015em; line-height: 1.25; }
+
+main section:not(.hero) { padding-block: 5rem; }
+main section + section { border-top: 1px solid var(--rule); }
+
+/* Hero : titre, filet vertical, présentation, forme en ton sur ton */
+.hero { position: relative; padding-block: clamp(4rem, 10vw, 8rem) 3.5rem; }
+.hero::after {
+  content: '';
+  position: absolute; right: -7rem; top: 0; bottom: 0; width: min(28rem, 60vw);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 600' preserveAspectRatio='xMaxYMid meet'%3E%3Cg fill='%23001a40'%3E%3Cpath d='M300 0C120 0 20 140 40 300c15 110 80 170 150 200-70-80-90-200-50-290C185 110 280 50 400 30 370 10 340 0 300 0z'/%3E%3Cpath transform='rotate(180 200 300)' d='M300 0C120 0 20 140 40 300c15 110 80 170 150 200-70-80-90-200-50-290C185 110 280 50 400 30 370 10 340 0 300 0z'/%3E%3C/g%3E%3C/svg%3E") no-repeat right center / contain;
+  pointer-events: none;
+}
+.hero > * { position: relative; z-index: 1; }
+
+.hero-text {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) 1px minmax(0, 1fr);
+  column-gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+}
+.hero-text::before { content: ''; grid-column: 2; grid-row: 1 / span 3; align-self: stretch; background: var(--cream); }
+h1 { grid-column: 1; grid-row: 1 / span 3; font-size: clamp(2.8rem, 8vw, 6rem); line-height: .95; overflow-wrap: anywhere; }
+.role { grid-column: 3; grid-row: 1; font-size: 1.25rem; font-weight: 600; line-height: 1.3; align-self: end; }
+.lead { grid-column: 3; grid-row: 2; color: var(--cream-soft); margin-top: .75rem; }
+.hero-text .actions { grid-column: 3; grid-row: 3; align-self: start; }
+
+.actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.75rem; }
+.btn {
+  display: inline-flex; align-items: center;
+  padding: .7rem 1.25rem; border-radius: 6px;
+  border: 1.5px solid var(--cream);
+  font-weight: 500; font-size: .95rem; text-decoration: none;
+  transition: background-color .15s, color .15s;
+}
+.btn:hover { background: var(--cream); color: var(--navy); }
+.btn.primary { background: var(--cream); color: var(--navy); font-weight: 600; }
+.btn.primary:hover { background: transparent; color: var(--cream); }
+
+.facts {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem 2rem;
+  margin-top: 4.5rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  font-size: .95rem; line-height: 1.55;
+}
+.facts dt { font-weight: 600; margin-bottom: .2rem; }
+.facts dd { color: var(--cream-soft); }
+.facts a { text-underline-offset: 3px; overflow-wrap: anywhere; }
+.facts a:hover { color: var(--cream); }
+
+/* Projets : au survol, la ligne s'inverse (crème sur marine) */
+.projects { list-style: none; border-top: 1px solid var(--cream); }
+.project {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 13rem 9rem;
+  gap: 1rem 2rem; align-items: start;
+  padding: 1.9rem 1rem; margin-inline: -1rem;
+  border-bottom: 1px solid var(--rule);
+  transition: background-color .15s, color .15s;
+}
+.project h3 { font-size: clamp(1.3rem, 2.4vw, 1.7rem); margin-bottom: .5rem; }
+.p-main p, .p-meta { color: var(--cream-soft); transition: color .15s; }
+.p-main p { max-width: 38rem; }
+.p-meta { display: grid; gap: .15rem; font-size: .92rem; }
+.p-meta strong { color: var(--cream); font-weight: 600; transition: color .15s; }
+.p-link { font-weight: 600; font-size: .93rem; text-underline-offset: 4px; justify-self: end; white-space: nowrap; }
+.project:hover, .project:focus-within { background: var(--cream); color: var(--navy); }
+.project:hover .p-main p, .project:focus-within .p-main p,
+.project:hover .p-meta, .project:focus-within .p-meta,
+.project:hover .p-meta strong, .project:focus-within .p-meta strong { color: var(--navy); }
+.project:hover :focus-visible, .project:focus-within :focus-visible { outline-color: var(--navy); }
+
+/* Compétences */
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem 2.5rem; }
+.skills div { border-top: 3px solid var(--cream); padding-top: 1rem; }
+.skills div:last-child { grid-column: span 2; border-top-style: dashed; }
+.skills p { color: var(--cream-soft); margin-top: .5rem; font-size: .95rem; line-height: 1.6; }
+
+/* Parcours */
+.timeline { list-style: none; display: grid; gap: 2.5rem; }
+.timeline li { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: 1rem 2rem; }
+.when { font-weight: 700; }
+.where { font-weight: 500; margin: .2rem 0 .5rem; }
+.timeline div > p:last-child { color: var(--cream-soft); max-width: 38rem; }
+
+/* Contact */
+.contact p:first-of-type { max-width: 34rem; color: var(--cream-soft); }
+
+/* Pied de page */
+.site-footer { background: var(--navy-deep); color: var(--cream-soft); padding-block: 2rem; font-size: .9rem; }
+
+/* Tablette et mobile */
+@media (max-width: 860px) {
+  .hero-text { grid-template-columns: 1fr; }
+  .hero-text::before { display: none; }
+  h1, .role, .lead, .hero-text .actions { grid-column: 1; grid-row: auto; }
+  .role { margin-top: 1.75rem; }
+  .facts { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 3rem; }
+  .project { grid-template-columns: 1fr; gap: .75rem; }
+  .p-link { justify-self: start; }
+  .skills { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+  .skills div:last-child { grid-column: auto; }
+  .timeline li { grid-template-columns: 1fr; gap: .25rem; }
+  main section:not(.hero) { padding-block: 3.5rem; }
+  .hero::after { opacity: .7; right: -9rem; }
+}
+@media (max-width: 560px) {
+  .skills { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .facts { grid-template-columns: 1fr; }
+  .site-header nav { gap: 1rem; font-size: .88rem; }
+  .brand { font-size: .95rem; }
+}
+
+/* Une seule entrée animée, au chargement */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-text { animation: rise .7s ease both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { transition: none !important; }
+}
