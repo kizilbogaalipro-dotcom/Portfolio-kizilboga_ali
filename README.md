@@ -4,7 +4,7 @@
 
 Mon portfolio personnel accessible via GitHub Pages.
 
-🌐 **URL du site** : [https://kizilboga.github.io](https://kizilbogaalipro-dotcom.github.io)
+🌐 **URL du site** : [https://kizilboga.github.io](https://kizilbogaalipro-dotcom.github.io/Portfolio-kizilboga_ali)
 
 ---
 
